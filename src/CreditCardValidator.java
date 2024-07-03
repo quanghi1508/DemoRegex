@@ -1,6 +1,8 @@
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+/* Pattern: ^(\d{4}[-\s]?){3}\d{4}$
+(\d{4}[-\s]?){3}\d{4}: Nhóm 4 chữ số, lặp lại 3 lần với dấu gạch ngang hoặc khoảng trắng tùy chọn, sau đó là 4 chữ số cuối.
+ */
 public class CreditCardValidator {
     public static void main(String[] args) {
         String creditCardPattern = "^(\\d{4}[-\\s]?){3}\\d{4}$";

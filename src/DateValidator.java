@@ -1,6 +1,10 @@
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+/*Pattern: ^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$
+(0[1-9]|[12][0-9]|3[01]): Ngày từ 01 đến 31.
+(0[1-9]|1[0-2]): Tháng từ 01 đến 12.
+([0-9]{4}): Năm bao gồm 4 chữ số.
+*/
     public class DateValidator {
         public static void main(String[] args) {
             String datePattern = "^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})$";
